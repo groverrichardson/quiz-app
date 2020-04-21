@@ -1,0 +1,248 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div {
+    display: flex;
+    max-width: 75%;
+}
+
+.information-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#question-1, #question-counter {
+    margin-top: 0px;
+}
+
+body {
+    background-image: url("/Images/blue-background.jpg");
+}
+
+.current-view {
+    background-color: white;
+    padding: 8%;
+    max-height: 450px;
+    border: solid 5px #CECECE;
+}
+
+main {
+    margin-bottom: 25px;
+    font-size: small;
+}
+
+h1 {
+    box-sizing: border-box;
+    text-align: center; 
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+h2, h3 {
+    font-size: medium;
+    font-weight: 100;
+}
+
+img, .answer-description, #final-comment{
+    max-width: 80%;
+    width: 500px;
+    max-height: 300px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.answer-description, #final-comment {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.main-button, .navigation-button, .restart{
+    padding: 10px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.restart {
+    margin-bottom: 50px;
+}
+
+.main-button {
+    margin-bottom: 25px;
+}
+
+.correct {
+    border: 20px solid #3AAF4A;
+    background-color: #3AAF4A;
+    border-radius: 20px;
+}
+
+.wrong {
+    border: 20px solid #C63016;
+    background-color: #C63016;
+    border-radius: 20px;
+}
+
+.navigation-button {
+    background-image: linear-gradient(to bottom right, #0D1949, #00589E);
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.answer-description {
+    max-width: 95%;
+}
+
+.question {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.answers {
+    display: block;
+    width: 100%;
+}
+
+.answer-buttons {
+    display: block;
+    width: 100%;
+    padding-left: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    background-image: linear-gradient(to bottom right, #0D1949, #00589E);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.current-score {
+    align-self: flex-start;
+    margin-top: 25px;
+    font-size: small;
+    font-weight: lighter;
+    font-size: inherit;
+}
+
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+    max-width: 80%;
+}
+
+.bottom-nav.final {
+    justify-content: center;
+}
+
+.image-placeholder {
+    padding-left: 50%;
+    padding-right: 50%;
+    background-color: lightgrey;
+    padding-bottom: 25%;
+    padding-top: 25%;
+    margin-bottom: 25px;
+}
+
+.score.final {
+    align-self: center;
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section.button.navigation-button {
+    justify-content: center;
+}
+
+@media screen 
+  and (min-width: 1200px) 
+  and (max-width: 1600px) { 
+    .center-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        width: 75%;
+    }
+    .current-view {
+        max-height: 400px;
+    }
+    .bottom-nav {
+        max-width: 70%;
+    }
+}
+
+.feedback-title {
+    margin-top: 0px;
+    font-size: x-large;
+}
+
+#current-score {
+    font-weight: 900;
+    color: #black;
+    margin-right: 5px;
+}
+
+@media screen  
+  and (max-width: 830px) { 
+      #current-score {
+          font-size: 3vw;
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+
+      p.score {
+          font-size: 3vw;
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+
+      div#nav-div {
+          flex-direction: column;
+      }
+
+      .bottom-nav {
+          max-width: 90%;
+          align-items: center;
+      }
+}
+
+@media screen  
+  and (max-width: 500px) { 
+      .question {
+        font-size: 6vw;
+    }
+}
